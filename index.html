@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <div class="login-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Username" name="username">
+          <input type="text" placeholder="Password" name="psw">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    <h1>Vehicle Registration Form</h1>
+    <form action ="" id="registration">
+      <fieldset>
+        <legend> Owner's Information </legend>
+        <br>
+
+        <label for = "Full Name">Registration for</label>
+        <input type= "text" name= "fname" placeholder="Enter first name" maxlength = "25" size = "20" onclick="adate()">
+        <input type= "text" name= "lname" placeholder="Enter last name" maxlength = "25" size = "20" onclick="adate()">
+        <br>
+        <br>
+
+        <label for="Contact Deatils">Contact Details:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email">
+        <input type=number id="phone number" name = "phone number" placeholder="Enter phone number" max = "10">
+        <br>
+        <br>
+        <label for="birthday">DOB:</label>
+        <input type="date" id="birthday" name="birthday">
+
+      <br>
+      <br>
+
+      <label for="Gender"> Gender</label>
+        <br>
+        <label for = "gender">Male</label>
+        <input type = "radio" id="male" name="rb" value="Male" />
+        <label for = "Female">Female</label>
+        <input type = "radio" id="female" name="rb" value="Female"/>
+        <label for = "other">Other</label>
+        <input type = "radio" id="other" name="rb" value="Other"/>
+        <br>
+        <br>
+
+        <label for="SSN">SSN</label>
+        <input type="password" id="ssn" name= "ssn" placeholder= "Enter your SSN" max length = "25" size = 20>
+        <br>
+        <br>
+        <legend> Registration Information </legend>
+        <br>
+        <label for = "Registration">Registration Type: (Check one)</label>
+        <input type="checkbox" id="Original" name="Original" value ="Original">
+        <label for = "Original">Original</label>
+        <input type="checkbox" id="Renewal" name="Renewal" value ="Renewal">
+        <label for = "Renewal">Renewal</label>
+        <input type="checkbox" id="Private" name="Private" value ="Private">
+        <label for = "Private">Private</label>
+        <input type="checkbox" id="Reissue" name="Reissue" value ="Reissue">
+        <label for = "Reissue">Reissue(Plates & Decals)</label>
+        <br>
+        <br>
+        <input type="checkbox" id="Reissue(Decals)" name="Reissue(Decals)" value ="Reissue(Decals)">
+        <label for = "Original">Reissue (Decals Only)</label>
+        <input type="checkbox" id="Rental" name="Rental" value ="Rental">
+        <label for = "Original">Rental Vehicle</label>
+        <input type="checkbox" id="Transfer" name="Transfer" value ="Transfer">
+        <label for = "Original">Transfer Licence Plate No:</label>
+        <input type=number id="plate number" name = "plate number" placeholder="Enter Plate Num" max = "10">
+        <br>
+        <br>
+        <label for = "vehicle">Vehicle Make</label>
+        <select id="vehicle">
+          <option style ="display:none"></option>
+          <option>Honda</option>
+          <option>Nissan</option>
+          <option>Jeep</option>
+          <option>Audi</option>
+          <option>Toyota</option>
+          <option>Chevy</option>
+          <option>Ford</option>
+          <option>Lexus</option>
+        </select>
+        <label for = "vehicle">Year</label>
+        <select id="Year">
+          <option style ="display:none"></option>
+          <option>2022</option>
+          <option>2021</option>
+          <option>2020</option>
+          <option>2019</option>
+          <option>2018</option>
+          <option>2017</option>
+          <option>2016</option>
+          <option>2014</option>
+          <option>2013</option>
+          <option>2012</option>
+          <option>2011</option>
+          <option>2012</option>
+        </select>
+        <br>
+        <br>
+        <label for="Offences"> Have you ever held and driving offences in the past 5 years?</label>
+        <br>
+        <label for = "yes">Yes</label>
+        <input type = "radio" id="yes" name="rb" value="Yes"/>
+        <label for = "no">No</label>
+        <input type = "radio" id="no" name="rb" value="No"/>
+        <br>
+        <br>
+        <label for="Offences">If Yes, please specify</label>
+        <textarea id="Offences" name="offences" rows="4" cols="50"></textarea>
+        <br>
+        <br>
+        <button type="button">Click to Save</button>
+        <button type="button" onclick="window.location.reload();">Click to Clear</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
